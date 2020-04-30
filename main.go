@@ -1,7 +1,16 @@
 package main
 
-import "goFaker"
+import (
+	"fmt"
+	"goFaker"
+)
 
 func main() {
-	faker.RandomFirstName()
+	person := faker.GeneratePerson()
+
+	fmt.Println(person.Names.Firstname)
+	fmt.Println(person.Names.Surname)
+	fmt.Println(person.Bank.IBAN)
+	fmt.Println(person.Bank.AccountNumber)
+	fmt.Println(person.Bank.BankCode)
 }
