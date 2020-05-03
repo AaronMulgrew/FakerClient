@@ -14,4 +14,5 @@ func main() {
 	fmt.Println(person.Bank.AccountNumber)
 	fmt.Println(person.Bank.BankCode)
 	fmt.Println(person.Car.NumberPlate)
+	fmt.Println(person.Car.CurrentSpeed)
 }
