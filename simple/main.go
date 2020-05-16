@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/AaronMulgrew/GoFaker"
+	"GoFaker"
 )
 
 func main() {
@@ -15,4 +15,8 @@ func main() {
 	fmt.Println(person.Bank.BankCode)
 	fmt.Println(person.Car.NumberPlate)
 	fmt.Println(person.Car.CurrentSpeed)
+	
+	server := faker.GenerateServer()
+	fmt.Println(server.File.Extension)
+	fmt.Println(server.File.ContentType)
 }
